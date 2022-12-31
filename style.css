@@ -107,7 +107,7 @@ article.card {
   border-radius: 15px;
 }
 
-article.card img {
+article.card > img {
   border-radius: 15px 15px 0 0;
 }
 
@@ -123,4 +123,27 @@ article .card_body h3 {
 article .card_body p {
   margin-top: 16px;
   color: var(--clr-primary-100);
+}
+
+article .card_footer {
+  padding: 16px;
+  display: flex;
+}
+
+article .card_footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_footer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.card_footer-share {
+  width: 15px;
+  height: 15px;
+  background-color: var(--clr-primary-400);
 }
