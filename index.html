@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Article preview component showcasing design tips for home furniture. Read insights from Michelle Appleton on how to enhance your living space."
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Article preview component</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+    <title>Article preview component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <article class="card">
+      <img
+        class="card_column-1-2"
+        src="images/drawers.jpg"
+        alt="Elegant home drawers"
+      />
 
-  <article class="card">
-    <img class="card_column-1-2" src="images/drawers.jpg" alt="">
-
-    <div class="card_column-2-3">
-      <div class="card_body">
-        <h3>
-          Shift the overall look and feel by adding these wonderful
-          touches to furniture in your home
-        </h3>
-        <p>
-          Ever been in a room and felt like something was missing? Perhaps
-          it felt slightly bare and uninviting. I've got some simple tips
-          to help you make any room feel complete.
-        </p>
-      </div>
-      <div class="card_footer">
-        <img class="card_footer-avatar" src="images/avatar-michelle.jpg" alt="Michelle's display picture.">
-        <div class="card_footer-info">
-          <h4>Michelle Appleton</h4>
-          <p>28 Jun 2020</p>
+      <div class="card_column-2-3">
+        <div class="card_body">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I've got some simple tips to help
+            you make any room feel complete.
+          </p>
         </div>
-        <div class="card_footer-circle">
-          <img class="card_footer-share" src="images/icon-share.svg" alt="">
-        </div>
+        <article>
+          <div class="card_footer">
+            <img
+              class="card_footer-avatar"
+              src="images/avatar-michelle.jpg"
+              alt="Portrait of Michelle Appleton"
+            />
+            <div class="card_footer-info">
+              <h2>Michelle Appleton</h2>
+              <p>28 Jun 2020</p>
+            </div>
+            <div class="card_footer-circle" aria-label="Share Article"></div>
+          </div>
+
+          <div class="card_popup" id="cardPopup" style="display: none">
+            <p>Share</p>
+            <div class="social">
+              <a href="#" aria-label="Share on Facebook"
+                ><img src="images/icon-facebook.svg" alt="Facebook icon"
+              /></a>
+              <a href="#" aria-label="Share on Twitter"
+                ><img src="images/icon-twitter.svg" alt="Twitter icon"
+              /></a>
+              <a href="#" aria-label="Share on Pinterest"
+                ><img src="images/icon-pinterest.svg" alt="Pinterest icon"
+              /></a>
+            </div>
+            <div
+              class="card_footer-circle-2"
+              aria-label="Close Share Options"
+            ></div>
+          </div>
+        </article>
       </div>
-    </div>
-  </article>
-  <!-- Share -->
+    </article>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
